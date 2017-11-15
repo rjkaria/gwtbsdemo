@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/jboss-eap-7/eap-openshift:latest
+FROM registry.access.redhat.com/jboss-eap-7/eap70-openshift
 
 EXPOSE 8080 8888
 
