@@ -5,5 +5,5 @@ FROM openshift/jboss-webserver31-tomcat8-openshift:latest
 
 EXPOSE 8080 8888
 
-#ADD gwtbootstrap3-demo-1.0-SNAPSHOT.war  $JBOSS_HOME/standalone/deployments/
-ADD gwtbsdemo.war  /usr/local/tomcat/webapps/
+#ADD gwtbsdemo.war  /usr/local/tomcat/webapps/
+ADD gwtbsdemo.war  /opt/webserver/webapps/
