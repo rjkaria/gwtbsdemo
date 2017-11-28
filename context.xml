@@ -33,7 +33,7 @@
     -->
 
     <Resource name="jdbc/a2go3"
-              url="jdbc:postgresql://localhost:5432/a2go3"
+              url="jdbc:postgresql://172.17.0.5:5432/a2go3"
               driverClassName="org.postgresql.Driver"
               username="a2go3"
               password="a2go3"
