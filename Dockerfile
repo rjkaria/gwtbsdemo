@@ -1,6 +1,7 @@
 #FROM registry.access.redhat.com/jboss-eap-7/eap70-openshift
 #FROM registry.hub.docker.com/tomcat:8
-FROM tomcat:8
+#FROM tomcat:8
+FROM openshift/redhat-sso71-openshift:latest
 
 EXPOSE 8080 8888
 
