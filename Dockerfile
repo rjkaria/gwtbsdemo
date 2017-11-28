@@ -1,8 +1,7 @@
-#FROM registry.access.redhat.com/jboss-eap-7/eap70-openshift
-#FROM registry.hub.docker.com/tomcat:8
-FROM tomcat:8
+FROM openshift/omcat:8
 
-EXPOSE 8080 8888
+EXPOSE 8080 8443
 
-#ADD gwtbootstrap3-demo-1.0-SNAPSHOT.war  $JBOSS_HOME/standalone/deployments/
-ADD gwtbootstrap3-demo-1.0-SNAPSHOT.war  /usr/local/tomcat/webapps/
+ADD gwtbsdemo.war /opt/webserver/webapps
+ADD postgresql-9.4.1207.jar /opt/webserver/lib
+ADD server.xml /opt/webserver/conf
